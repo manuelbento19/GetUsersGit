@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="maker.js"></script>
+    <title>AddUser</title>
+</head>
+<body>
+    <div id="root">
+        <div id="app">
+            <aside>
+                <nav>
+                    <input type="file" accept=".jpg,.png" name="file" id="file">
+                    <img src="./168879372_2398024410330028_814147120583393019_n.png" alt="" id="foto">
+                    <label for="file">Insira uma foto</label>
+                </nav>
+                <form>
+                    <div class="inputs">
+                        <label for="name">Nome Completo</label>
+                        <input type="text" name='nome' id="name">
+                    </div>
+                    <div class="inputs">
+                        <label for="linguagens">Linguagens</label>
+                        <input type="text" name='linguagens' id="linguagens">
+                    </div>
+                    <div class="inputs">
+                        <label for="telefone">Telefone</label>
+                        <input type="tel" name='telefone' id="telefone">
+                    </div>
+                    <div class="inputs">
+                        <label for="Senha">Senha</label>
+                        <input type="password" name='senha' id="Senha">
+                    </div>
+                    <div class="inputs">
+                        <label for="confirm">Confirmar senha</label>
+                        <input type="password" id="confirm">
+                    </div>
+                    <button type="submit">Cadastrar</button>
+                </form>
+            </aside>
+            <main>
+                <ul>
+                    <li>
+                        <header>
+                            <img src="./168879372_2398024410330028_814147120583393019_n.png" alt="">
+                                
+                            <div>
+                                <strong>Manue Bento MB</strong>
+                                <span>Javascript, C#, PHP</span>
+                            </div>
+                        </header> 
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit</p>
+                        <a href="#">Acessar no Github</a>
+                    </li>
+                    <li>
+                        <header>
+                            <img src="./168879372_2398024410330028_814147120583393019_n.png" alt="">
+                                
+                            <div>
+                                <strong>Manue Bento MB</strong>
+                                <span>Javascript, C#, PHP</span>
+                            </div>
+                        </header> 
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit</p>
+                        <a href="#">Acessar no Github</a>
+                    </li>
+                    <li>
+                        <header>
+                            <img src="./168879372_2398024410330028_814147120583393019_n.png" alt="">
+                                
+                            <div>
+                                <strong>Manue Bento MB</strong>
+                                <span>Javascript, C#, PHP</span>
+                            </div>
+                        </header> 
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit</p>
+                        <a href="#">Acessar no Github</a>
+                    </li>
+                    <li>
+                        <header>
+                            <img src="./168879372_2398024410330028_814147120583393019_n.png" alt="">
+                                
+                            <div>
+                                <strong>Manue Bento MB</strong>
+                                <span>Javascript, C#, PHP</span>
+                            </div>
+                        </header> 
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit</p>
+                        <a href="#">Acessar no Github</a>
+                    </li>
+                    <li>
+                        <header>
+                            <img src="./168879372_2398024410330028_814147120583393019_n.png" alt="">
+                                
+                            <div>
+                                <strong>Manue Bento MB</strong>
+                                <span>Javascript, C#, PHP</span>
+                            </div>
+                        </header> 
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit</p>
+                        <a href="#">Acessar no Github</a>
+                    </li>
+                    <li>
+                        <header>
+                            <img src="./168879372_2398024410330028_814147120583393019_n.png" alt="">
+                                
+                            <div>
+                                <strong>Manue Bento MB</strong>
+                                <span>Javascript, C#, PHP</span>
+                            </div>
+                        </header> 
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit</p>
+                        <a href="#">Acessar no Github</a>
+                    </li>
+                </ul>
+            </main>
+        </div>
+    </div>
+    <script>
+        
+        var input = document.getElementById('foto');
+        input.onclick = function(){
+            document.getElementById('file').click();
+        }
+        var file = document.getElementById('file');
+        file.onchange = function(e){
+            pegaImg(e)
+        };
+        var GoSave = document.querySelector('form')
+        
+        GoSave.onsubmit = function(e){
+            saveImg();
+            e.preventDefault();
+        }
+    </script>
+</body>
+</html>
